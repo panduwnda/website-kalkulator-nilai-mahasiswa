@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Halaman Perhitungan</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Sidebar untuk Navigasi -->
+    <div class="sidebar">
+      <h2>Menu</h2>
+      <ul>
+        <li><a href="index.html">Halaman Utama</a></li>
+        <li><a href="calculate.html">Halaman Perhitungan</a></li>
+        <li><a href="result.html">Halaman Hasil</a></li>
+      </ul>
+    </div>
+
+    <!-- Konten Utama untuk Input Nilai -->
+    <div class="main-content">
+      <div class="form-container">
+        <h1>Input Nilai Mahasiswa</h1>
+        <form id="calcForm" onsubmit="calculateGrade(event)">
+          <label for="tugas">Nilai Tugas (30%):</label>
+          <input type="number" id="tugas" min="0" max="100" required placeholder="Masukkan nilai tugas" />
+
+          <label for="uts">Nilai UTS (30%):</label>
+          <input type="number" id="uts" min="0" max="100" required placeholder="Masukkan nilai UTS" />
+
+          <label for="uas">Nilai UAS (40%):</label>
+          <input type="number" id="uas" min="0" max="100" required placeholder="Masukkan nilai UAS" />
+
+          <button type="submit" class="submit-button">Hitung Nilai</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
